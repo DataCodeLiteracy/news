@@ -1,10 +1,10 @@
 'use client'
 
 import News from '@/components/News'
-import store from '@/store'
+import store, { wrapper } from '@/store'
 import { Provider } from 'react-redux'
 
-export default function Home() {
+function Home() {
   return (
     <Provider store={store}>
       <main>
@@ -15,3 +15,5 @@ export default function Home() {
     </Provider>
   )
 }
+
+export default wrapper.withRedux(Home)

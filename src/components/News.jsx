@@ -2,7 +2,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import NewsList from './NewsList'
 import { useEffect } from 'react'
 import { fetchNewsData } from '@/actions/news'
-import { newsSliceActions } from '@/store'
 
 const News = () => {
   const dispatch = useDispatch()
